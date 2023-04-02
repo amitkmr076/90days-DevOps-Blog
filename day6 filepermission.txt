@@ -1,0 +1,95 @@
+# SECOND
+# What are chown,chgrp and chmod command.
+
+
+Chown: The chown command is used to change the ownership of a file or directory.
+It is used to give ownership of a file or directory to a specific user 
+
+$ chown user_name file.txt
+
+Chgrp: The chgrp command is used to change the group ownership of a file or directory. 
+It is used to change the group of a file or directory to a specific group.
+
+$ chgrp group_name file.txt
+
+Chmod: The chmod command is used to change the permissions of a file or directory. 
+It is used to change the permissions of a file or directory to allow or deny access to specific users or groups.
+
+$ chmod u+rw file.txt or $ chmod 600 file.txt 
+Add u for user  and g for group. And or use numeric value to change rwx permission.
+
+# FIRST 
+
+# what is file permisson?
+
+File permissions in terminal allow users to have control over who can access and modify the files and directories in their system. There are three types of file permissions in terminal: read (r), write (w), and execute (x).
+
+Read (r): This permission allows a user to view the contents of a file or directory.
+
+Write (w): This permission allows a user to modify the contents of a file or directory.
+
+Execute (x): This permission allows a user to execute a file or to access files or directories within a directory
+
+r,w,x,wx,rw,rx,rwx and no permission command for  in numerical fomat
+
+r = 4
+w = 2
+x = 1
+rw = 6
+rx = 5
+wx = 3
+rwx = 7
+no permission = 0
+
+# THIRD
+
+What is ACL and getfacl and setfacl commands.
+
+ACL (Access Control List) is a feature of file systems that allows you to set permissions for individual users and groups,
+in addition to the traditional file permission settings. ACLs are used to provide more fine control over who can access
+a file or directory, and what actions they can perform on it.
+
+The getfacl command is used to display the ACL of a file or directory. When you run getfacl on a file or directory, 
+it will output a list of the users and groups that have been granted access to that file or directory, 
+as well as the permissions they have been granted.
+
+For example, if you run getfacl myfile.txt. Output will be as:
+
+# file: myfile.txt
+# owner: user
+# group: user
+user::rw-
+group::r--
+other::r--
+
+This output shows that the file myfile.txt is owned by user, belongs to the users group, and has the following ACL entries:
+
+user::rw-: user has read and write permissions.
+group::r--: The users group has read-only permission.
+other::r--: All other users have read-only permission.
+
+The setfacl command is used to set the ACL of a file or directory. You can use setfacl to add, modify,
+or remove ACL entries for a particular file or directory.
+
+For example, if you want to grant User read and write access to myfile.txt, you can run the following command:
+
+setfacl -m u:User:rw myfile.txt
+
+Now, User will have read and write permissions on myfile.txt. Similarly, you can use setfacl to modify or
+remove ACL entries for a file or directory.
+
+For example, if you want to remove the ACL entry for user on myfile.txt, you can run the following command:
+
+setfacl -x u:User myfile.txt
+
+This will remove the ACL entry for User from the ACL of myfile.txt. After running this command, User will no longer 
+have any permissions on myfile.txt. 
+
+You can also use setfacl with the -b option to remove all ACL entries for a file or directory, effectively resetting 
+the permissions to the default settings. 
+
+For example:
+setfacl -b myfile.txt
+
+This will remove all ACL entries from myfile.txt, and the file will have the default permissions 
+assigned by the traditional file permission settings.

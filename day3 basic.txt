@@ -1,0 +1,111 @@
+Linux command to various Task with command example.
+
+# 1-To change access permission in file command in linux.
+
+To change the access permission of a file in Linux, you can use the chmod command. 
+For example, to give read, write, and execute permission to the owner of a file called “example.txt”, 
+you would use the command:
+
+chmod u+rwx example.txt
+
+
+# 2-To check which command you have run till now in linux.
+
+To check which command you have run till now in Linux, you can use the history command. 
+The command will display a list of the commands that you have recently run in the terminal.
+
+
+# 3-To remove file or Directory in linux with example
+
+
+
+The 'rm' command is used to remove files or directories in Linux.
+
+Examples:
+
+1. To remove a single file, use the command 'rm filename.txt':
+
+$ rm filename.txt
+
+2. To remove multiple files, use the command 'rm file1.txt file2.txt':
+
+$ rm file1.txt file2.txt
+
+3. To remove an entire directory, use the command 'rm -r directoryname':
+
+$ rm -r directoryname
+
+
+# 4-To create a fruit.txt file and to view content in linux command
+
+1. To create a fruit.txt file in the current working directory, type the following command: 
+
+touch fruit.txt
+
+2. To view the content of the file, type the following command: 
+
+cat fruit.txt
+
+# 5- Add content in fruits.txt (One in each line) - Apple, Mango, Banana, Cherry, Kiwi, Orange, Guava.
+
+echo "Apple" >> fruits.txt
+echo "Mango" >> fruits.txt
+echo "Banana" >> fruits.txt
+echo "Cherry" >> fruits.txt
+echo "Kiwi" >> fruits.txt
+echo "Orange" >> fruits.txt
+echo "Guava" >> fruits.txt
+
+
+# 6 and 7 - Add content in fruits.txt (One in each line) - Apple, Mango, Banana, Cherry, Kiwi, Orange, Guava.
+To see top and bottom 3 fruit in the file in linux command line:
+
+head -n 3 fruits.txt
+Apple
+Mango
+Banana
+
+tail -n 3 fruits.txt
+Cherry
+Kiwi
+Orange
+
+
+# 8 -to create file color.txt and view content im linux command line
+
+1. To create the file, enter the following command:
+
+touch color.txt
+
+2. To view the contents of the file, enter the following command:
+
+cat color.txt
+
+
+# 9 - Add content in color.txt (one in each line) -Red, Pink, White, Black, Orange, Purple, Grey. 
+
+- echo Red >> color.txt
+- echo Pink >> color.txt
+- echo White >> color.txt
+- echo Black >> color.txt
+- echo Orange >> color.txt
+- echo Purple >> color.txt
+- echo Grey >> color.txt
+
+# 10 - What is the command in linux to find the difference in color.txt and fruit.txt
+
+The command to find the difference in color.txt and fruit.txt would be:
+
+ - diff color.txt fruits.txt
+
+
+The diff command will show the differences between the two files, including which lines are different or the same. 
+It will show the lines that are different between the two files and which lines are the same.
+This is because diff works by comparing the two files line by line and reporting any differences it finds.
+It will show the lines that are unique to each file, and the lines that are the same.
+
+For Example - both color.txt and fruits.txt have one content same as each other, Which is it if you guess.
+Yes its Orange. Now when you Run diff command it will show all the other content except Orange will be shown in
+different alphanumric way.for example- 7a7 or 6o7p.
+
+Thankyou,I hope this helps you a little in understanding the Basic commands. 

@@ -1,0 +1,67 @@
+1 - What is a package manager in Linux?
+
+A package manager in Linux is a tool that helps you install, manage, and remove software packages on your system. 
+It simplifies the process of software installation by automating the downloading, installation, and configuration of 
+software packages and their dependencies. With a package manager, you can easily install new software, update existing 
+software, and remove software that is no longer needed, all with a few simple commands in the terminal. It also ensures 
+that all software packages are installed correctly and that any dependencies are satisfied, making it easier to maintain 
+a stable and secure system.
+
+2 - What is a package?
+
+A package is a collection of files that are bundled together to provide specific functionality or features to a system 
+or application. It includes everything that is needed for the software to run correctly on a particular operating system. 
+This makes it easier for users to install and manage software, as they can use a package manager to download and install 
+all necessary files and dependencies at once. Packages are used in various software systems, including operating systems 
+like Linux, to simplify the process of software installation and management
+
+3 - what are Different kinds of package managers?
+
+There are different kinds of package managers used in various software systems. Here are a few types:
+
+Debian-style Package Managers: These package managers, such as apt-get, are used in Debian-based systems like Ubuntu. 
+They use a package repository to store packages and dependencies, making it easy to install or update packages.
+
+RPM Package Managers: These package managers, such as yum, are used in Red Hat-based systems like CentOS. They also use 
+a package repository to store packages and dependencies.
+
+Homebrew: This package manager is used on macOS systems to install and manage software packages. It uses a formula system 
+to define how to download, configure, and install software packages.
+
+Chocolatey: This package manager is used on Windows systems to install and manage software packages. It uses a PowerShell 
+script to automate the installation process.
+
+NPM: This package manager is used in Node.js environments to install and manage packages. It uses a package.json file to 
+define dependencies and manage packages.
+
+Overall, package managers make it easier to install and manage software packages, regardless of the operating system or 
+programming language
+
+4 - systemctl and systemd
+
+systemctl and systemd are two important components in modern Linux-based operating systems that help manage system 
+services.
+
+systemctl is a command-line tool used to control and manage the system's services, including starting, stopping, and 
+checking the status of services. It interacts with systemd, which is a system and service manager that runs as the first
+process on a Linux system.
+
+Systemd is responsible for managing the startup and shutdown of the system, as well as starting and stopping system 
+services. It also manages system resources and provides logging and error handling capabilities.
+
+Together, these two components make it easy to manage and control the services running on a Linux-based system. 
+They are widely used in modern Linux distributions, including Ubuntu, CentOS, and Fedora, among others.
+
+5 - What are commands systemctl vs service
+
+systemctl and service are two command-line tools used to manage and control system services in Linux-based operating 
+systems.
+
+systemctl is a more modern and powerful tool compared to service. It is used to start, stop, restart, enable, disable, 
+and view the status of services in a more granular way. It interacts with the systemd system and service manager and 
+provides detailed information about the status of services and their dependencies.
+
+On the other hand, service is an older command-line tool that provides basic functionality to start, stop, and restart 
+services. It is used with traditional system initialization systems like SysVinit or Upstart.
+
+Installation process for docker and jenkins?

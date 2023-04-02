@@ -1,0 +1,46 @@
+#Introduction To DevOps
+
+What Is DevOps?
+
+DevOps is an IT best practices methodology that brings developers and operations together to rapidly develop and deliver new software features and services.
+ The DevOps approach enables teams to collaborate and accelerate the development-to-deployment process while continuing to improve:
+
+Quality
+
+Security
+
+Reliability
+
+For DevOps to be effective, you must begin with a culture and mindset of collaboration between developers and operations.
+ This is crucial to its success. It enables increased communication between the two teams and thereby leads to innovation.
+ Working within an organization without boundaries sets up an integrated environment where you can repeatedly test and improve the software code,
+ and then implement a continuous release schedule to deploy the enhanced software.
+
+What are Automation, Scaling, and Infrastructure in DevOps?
+DevOps has numerous benefits to not only development and operations teams, but potentially an entire business.
+ While automation makes it easier to achieve DevOps business goals.
+
+DevOps and automation can provide consistency across repetitive tasks by configuring an automation tool and removing the threat of human error.
+ As well as increase the speed of the team from code integration to application deployment. 
+It also creates a much more reliable and stable system due to improved collaboration. Therefore this sees a reduction in errors from miscommunication.
+
+Automating processes are scalable when managing multiple applications, and/or environments, all while remaining consistent.
+ As a result, teams have a better understanding of the product due to having access to data about product performance from end-users. 
+Thus being able to develop a strategy to solve any pain points or errors occurring.
+
+Infrastructure automation (or configuration management/scripted infrastructure) enables developers or the operations team to automatically 
+manage, monitor, and facilitate resources instead of manually configuring hardware, software, or operating systems.
+ The process is sometimes referred to as programmable because the infrastructure configuration is defined in scripts.
+
+The idea of automating infrastructure enables the DevOps teams to test applications in a production-like environment, early in the development cycle.
+ It gives them the confidence to provision multiple test environments and prevents common deployment issues on time.
+
+The several benefits of infrastructure automation include improving speed and efficiency of development, flexibility to align with modern IT practices, etc.
+
+Importance Of DevOps
+
+In 2023, DevOps will continue to be a crucial factor in the success of any business. DevOps practices will help organizations maximize efficiency
+ and increase customer satisfaction by enabling faster time to market and shorter development cycles. It will also help organizations reduce costs
+ by automating manual tasks, enabling faster decision-making, and promoting collaboration among teams. Additionally, DevOps will play a key role
+ in helping organizations create and maintain secure and reliable systems, allowing them to take advantage of emerging technologies such as cloud computing
+, artificial intelligence, and machine learning.

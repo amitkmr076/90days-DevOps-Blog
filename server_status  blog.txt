@@ -1,0 +1,52 @@
+
+# 
+1. echo -e "\n-----------------------WELCOME--------------------------------"
+
+This command will print a line of text as output on the terminal. The -e flag enables the interpretation of backslash escapes.
+
+2. echo -e "\nHi $(whoami)  ! Welcome to the DevOps Journey\n"
+
+This command will print a line of text along with the username of the user which is obtained by using command substitution $(whoami).
+
+3. echo "Current Date and Time is: $(date)"
+
+This command will print the current date and time on the terminal which is obtained by using command substitution $(date).
+
+4. echo -e "\n The uptime of the server is $(uptime) \n Last Login Details :\n$(last -a | head -3)\n "
+
+This command will print the uptime of the server and the last login details on the terminal which is obtained by using command substitution $(uptime) and $(last -a | head -3).
+
+
+5. echo "Disk Space available:" && df -H | xargs | awk '{ print $11 "/" $9 }'
+
+The first part of this command, “echo “Disk Space available:””prints the text “Disk Space available:” to the terminal.
+The second part of this command, “df -H | xargs | awk ‘{ print $11 “/” $9 }’”,is used to get the disk space available.
+df is a command used to show the amount of disk space available on the system. 
+The -H option is used to display the sizes in a human-readable format. The output of the df command is piped to the xargs command,
+which is used to convert the output of the df command into separate arguments for the awk command. The awk command is then used to print 
+the 11th and 9th arguments, which are the total size and
+
+6. echo -e "\nRAM Utilization :": This command will print a string containing the words "RAM Utilization :" on the terminal.
+
+7. free | xargs | awk '{print $13 "/" $8}': This command will use the free command to get a list of information about the RAM usage,
+and then pipe it to xargs and awk commands. xargs will convert the list into arguments and awk will print the 13th and 8th columns of
+ the list, which contain the total and used RAM usage respectively.
+
+8. echo -e "\nTop CPU processes:": This command will print a string containing the words "Top CPU processes:" on the terminal.
+
+9. top | head -10: This command will use the top command to get a list of the top CPU processes and then pipe it to 
+the head command, which will print the first 10 lines of the list.
+
+
+# For crontab
+
+1 - */1 * * * * - This is the cron schedule that specifies when the command should be run. 
+The asterisk in each position means that the command should be run every minute, every hour, every day of the month, 
+every month, and every day of the week.
+
+2 - bash /home/ubuntu/practice/server_status.sh - This is the command that will be run by the cron job. 
+It calls the Bash interpreter to execute the server_status.sh script located in the /home/ubuntu/practice/ directory.
+
+3 - >> /home/ubuntu/server_details.txt - This redirects the output of the server_status.sh script 
+to the server_details.txt file located in the /home/ubuntu/ directory. The double arrow (>>) appends the output 
+to the end of the file rather than overwriting it.

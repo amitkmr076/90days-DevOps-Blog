@@ -1,0 +1,74 @@
+Introduction To Linux.
+
+Linux is an open-source operating system, meaning it is free for anyone to use, modify, and distribute.
+It is based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds.
+Linux is commonly used for personal computers, web servers, and many other applications.
+It is designed to be user-friendly and offers a range of features, including a graphical user interface,
+a wide variety of software applications, and compatibility with other operating systems
+
+LINUX ARCHITECTURE
+
+Linux architecture is comprised of four main components: hardware, kernel, shell, and applications. 
+Hardware is the physical components of the computer, such as the CPU and motherboard. 
+The kernel is the core of the operating system and manages the hardware and software resources. 
+The shell is a user interface that provides access to the kernel's functions and other applications.
+Finally, applications are programs that the user interacts with to perform tasks.
+
+ADD DIAGRAM
+
+
+what is kernel and shell in linux
+
+The kernel is the core of the Linux operating system.
+It is responsible for managing system operations, memory, and I/O operations.
+It also provides a platform for applications to run on.
+
+The shell is the user interface to the kernel. 
+It is a program that provides the user with an interface for interacting with the system.
+The shell interprets commands entered by the user and passes them to the kernel for execution.
+
+
+what is linux file system heirerchy
+
+The Linux File System Hierarchy is a logical arrangement of files and directories used by the Linux operating system. 
+It is rooted at the root directory '/' and organized in a tree-like structure that reflects the organization of files 
+and directories. At the top of the hierarchy is the root directory, which contains all other directories and files. 
+Directly below the root directory are the bin, sbin, usr, and lib directories, which contain the executable files for
+the system. Below those are the boot and dev directories, which contain files used during the boot process.
+The home directory is where users store their personal files. The etc, proc, and var directories contain 
+configuration files and system data. The tmp directory is used for temporary files.
+ Finally, the mnt directory is used for mounting external devices.
+
+
+
+what are linux basic commands with simple example
+
+1. ls – list directory contents
+2. cd – change directory
+3. mkdir – make directories
+4. rmdir – remove directories
+5. mv – move or rename files or directories
+6. cp – copy files or directories
+7. grep – search for patterns in files
+8. man – display manual pages for commands
+9. chmod – change access permissions for files or directories
+10. find – search for files by name or other criteria
+11.touch - to create empty file
+12.echo - to write text to display
+13.cat - to disply text on an file
+
+
+Examples: 
+1. ls – ls -l /home/user       (list the contents of the home directory)
+2. cd – cd /usr/bin            (change the current directory to /usr/bin)
+3. mkdir – mkdir new_folder    (create a new directory called ‘new_folder’)
+4. rmdir – rmdir old_folder    (remove the directory called ‘old_folder’)
+5. mv – mv old_name new_name   (rename a file from ‘old_name’ to ‘new_name’)
+6. cp – cp file1 file2         (copy the contents of ‘file1’ to ‘file2’)
+7. grep – grep ‘text’ file.txt (search for the word ‘text’ in the file ‘file.txt’)
+8. man – man ls               (display the manual page for the command ‘ls’)
+9. chmod – chmod 755 file.txt  (change the access permissions of ‘file.txt’ to 755)
+10.touch example.txt - This will create an empty file called "example.txt".
+11.echo "Hello World" - This will write the text "Hello World" to the display.
+12.cat example.txt - This will display the contents of the file "example.txt" on the screen.
+

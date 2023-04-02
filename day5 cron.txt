@@ -1,0 +1,153 @@
+# create directories from Day 1 to Day 90
+
+syntax img
+
+actual result img
+
+explain syntax:
+
+
+1. The first part of the command "for (( i=1; i<=90; i++ ))" sets up a for loop that will run from 1 to 90.
+
+2. The second part of the command "mkdir "day$i"" creates a new directory for each iteration of the loop 
+   and names it day followed by the loop's variable (i).
+
+3. Once the loop is finished, Save the command in vim or nano whichevever editor you are using.
+
+4. Afterthat give permission to user to excute the file, if needed by chmod command.
+
+5. 90 directories will have been created.By exucting the shell script
+
+
+# create additional directories along with above shell script for 90days directories through Argument: 
+
+syntax img
+
+result image
+
+explain syntax
+ 
+The arguments it takes are a prefix, a start number, and an end number. 
+
+1. The first argument it takes is a prefix. This is a string of characters that will appear in front of each directory name.
+
+2. The second argument is the start number. This is the number that will start the range of directories being created.
+
+3. The third argument is the end number. This is the number that will end the range of directories being created.
+
+4. The loop begins with the start number and ends with the end number. 
+   For each number in the range, the loop creates a directory using the prefix and the current number in the loop.
+
+5. When the loop is finished, all the directories in the range have been created.
+
+
+# How to take Backup by script
+
+ syntax img
+
+ explain syntax
+
+1. This script will take a backup of the directory located at /home/codebind/script and store it in the directory /home/codebind/backup2.
+2. The current date and time are stored in the variable curr_timestamp with the format of year-month-day-hour-minute-second.
+3. The backup file is then stored in the target directory with the name of the timestamp plus the extension .tgz.
+4. The script then checks if the source directory is not empty.
+5. If the source directory is not empty, then it compresses the source directory to a .tgz file and stores it in the target directory.
+6. Finally, the script prints out a message indicating that the backup is complete.
+7. Use command tar xf file_name to extract the file.
+
+
+# What is cron and crontab
+
+Cron is a scheduling utility in Unix-like operating systems (such as Linux) that allows you to schedule tasks to run automatically at specific times or intervals. 
+These tasks can include running scripts, executing commands, or performing system maintenance tasks.
+
+Crontab is a file that contains the list of scheduled tasks for cron to execute. 
+The crontab file is usually located in the /etc/ directory or in a user's home directory. 
+Each line in the crontab file specifies a task to be executed, along with the time and frequency at which it should be run.
+
+To edit your crontab file, you can use the crontab command followed by the -e option to open the file in a text editor:
+
+crontab -e
+
+This will open the crontab file in the default text editor specified by the EDITOR environment variable.
+
+If you want to view the contents of your crontab file without editing it, you can use the -l option:
+
+crontab -l
+
+This will display the contents of your crontab file in the terminal.
+
+Note that editing the crontab file requires basic knowledge of Unix commands and syntax. 
+It's important to be careful when editing the crontab file, as errors can cause unintended consequences. 
+It's also a good idea to test your scheduled tasks before deploying them to a production environment.
+
+
+This entry specifies that the script /path/to/my/script.sh should be executed at midnight every day (denoted by the five * symbols).
+
+The five fields in the entry represent, in order:
+
+Minute (0-59)
+Hour (0-23)
+Day of the month (1-31)
+Month (1-12)
+Day of the week (0-6, where 0 is Sunday)
+
+You can specify any combination of values in each field to define a custom schedule. 
+For example, if you want to run a script every Monday at 3:30pm, you can use the following crontab entry:
+
+30 15 * * 1 /path/to/my/script.sh
+This entry specifies that the script should be executed at 3:30pm every Monday (denoted by the value 1 in the fifth field).
+
+In summary, cron is a scheduling utility and crontab is the file that contains the list of scheduled tasks for cron to execute. 
+By editing the crontab file, you can schedule tasks to run automatically at specific times or intervals, allowing you to automate routine tasks and save time.
+
+# Using Crontab to backup:
+ here i am using my above backup.sh shell script to excute crontab
+
+ syntax img
+
+ result img
+
+1.Use command tar xf file_name to extract the file.
+2.Here home directory in blue color is the extracted file of tar zip file with timestamp in red color as shown in image
+
+
+# About User Management
+
+User management in Linux refers to the process of creating, modifying, and deleting user accounts on a Linux system. Here are some common user management tasks in Linux with their corresponding syntax using command-line tools:
+
+Creating a new user account:
+To create a new user account, use the useradd command with the desired username:
+
+
+sudo useradd username
+
+This will create a new user account with the default settings, including a home directory and a unique user ID.
+
+Modifying an existing user account:
+To modify an existing user account, use the usermod command with the desired options. For example, to change a user's password:
+
+sudo usermod -p new_password username
+This will set the user's password to "new_password".
+
+Deleting a user account:
+To delete a user account, use the userdel command with the desired username:
+
+sudo userdel username
+
+This will remove the user's account and all associated files and settings from the system.
+
+Managing user groups:
+To manage user groups, use the groupadd, groupmod, and groupdel commands. For example, to add a user to a group:
+
+sudo usermod -aG groupname username
+
+This will add the user to the specified group.
+
+It is important to manage user accounts carefully to ensure the security and stability of the Linux system. 
+You can learn more about user management and the various command-line tools available by consulting the Linux documentation 
+or seeking out online tutorials and resources.
+
+Thank you so much for taking the time to read my blog! Your support means the world to me, and I'm so grateful for your interest in my writing.
+
+
