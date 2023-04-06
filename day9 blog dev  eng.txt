@@ -1,0 +1,108 @@
+# 1 -  What is Git and why is it important?
+  Git is a popular version control system used by developers to keep track of changes made 
+  to a project's source code over time. Essentially, it allows multiple people to work on the 
+  same project without interfering with each other's work.
+
+When using Git, developers create "commits" which represent a snapshot of the code at a 
+specific point in time. Each commit contains a set of changes made to the code, along with 
+a message describing those changes.
+
+Git also allows developers to create "branches", which are essentially different versions 
+of the codebase. This makes it easy to work on new features without affecting the main 
+codebase, and to experiment with different approaches.
+
+Git is important because it enables collaboration, accountability, and reliability in software 
+development. By keeping track of changes to the codebase, developers can easily see who made 
+what changes, when those changes were made, and why. This makes it much easier to track down 
+bugs, revert to previous versions of the code, and maintain the integrity of the project.
+
+
+# 2 - What is difference Between Main Branch and Master Branch??
+  "Main" branch and "master" branch are the same in functionality, and they serve as the 
+  default branch in Git where all the code changes are committed. The only difference is 
+  the name used to identify the default branch.
+
+In the past, "master" was the default branch name used in Git, but due to its association 
+with slavery, discrimination, and racism, many people and organizations have started to use
+ "main" instead.
+
+So, to put it simply, "main" and "master" branches are essentially the same, with "main" 
+being a more inclusive and appropriate alternative to "master" as the default branch name.
+
+
+# 3 -  Can you explain the difference between Git and GitHub?
+       Git is a version control system that allows developers to keep track of changes made 
+       to a project's source code over time. It is a tool that developers can use locally on 
+       their computer to manage changes to their codebase.
+
+GitHub, on the other hand, is a web-based platform that provides hosting services for Git 
+repositories. It offers additional features on top of Git, such as a web interface, issue 
+tracking, and collaboration tools, making it easier for teams of developers to work together 
+on a project.
+
+In other words, Git is the tool that developers use to manage their code changes, while GitHub 
+is a platform that provides a centralized location for storing and sharing Git repositories.
+
+
+To put it simply, Git is like a hammer, and GitHub is like a toolbox that includes a hammer 
+along with other tools that make it easier to build something with the hammer.
+
+# 4 - How do you create a new repository on GitHub?
+    To create a new repository on GitHub, you can follow these simple steps:
+
+1 Log in to your GitHub account.
+2 Click on the "+" icon in the top right corner of the page and select "New repository" from 
+  the drop-down menu.
+3 Enter a name for your repository in the "Repository name" field.
+4 Optionally, you can add a description of your repository in the "Description" field.
+5 Choose whether you want your repository to be public or private. Public repositories are 
+  visible to anyone, while private repositories are only visible to you and any collaborators 
+  you invite.
+6 Select "Initialize this repository with a README" if you want to create a new README file 
+  for your repository. A README file is a document that provides information about your project,
+  such as how to use it or how to contribute to it.
+7 Click on the "Create repository" button to create your new repository.
+
+Once your new repository has been created, you can start adding files to it, creating branches, and collaborating with others by inviting them to your repository.
+
+# 5 - What is difference between local & remote repository? How to connect local to remote?
+
+A local repository is a copy of a Git repository that is stored on your local machine, while a
+remote repository is a Git repository that is stored on a remote server, such as GitHub.
+
+When you make changes to files in your local repository, those changes are only reflected in 
+your local copy of the repository until you push those changes to the remote repository. 
+Similarly, when changes are made to the remote repository by other contributors, those changes
+are only reflected in the remote repository until you pull those changes down to your local 
+copy of the repository.
+
+To connect your local repository to a remote repository, you can follow these simple steps:
+
+1 Create a new repository on your chosen in your local system and type git init command 
+ to Initialize git in the repository
+
+2 Add user name and email to it by command git config --global user.name"user name"
+and git config --global user.email"user email"
+
+3 add some file and make changes to it and run the command git add "file name"
+  and commit the file along with changes by git commit -m "add message"
+
+4  Now add url to git remote by git remote add origin "url"
+   you have to copy your github repository url or just simply create an
+   repository with the same name as your local repository and copy the repo url and paste it
+   and check the remote status by git remote -v
+   you will see an output showing origin url fetch and push
+
+5 then, push your changes to github by using command
+  git push origin master - after this it will ask for user name and password   
+  provide user name and for password you have to generate token by going to settings 
+  and to developers setting there you will see an option fo generate token just follow The
+  steps to generate it and copy the token and use it in place of password.
+  And your repository will be pushed to Github and you can see th changes after you refresh 
+  the page
+  
+  Note: token expire as its has validity from 7 days to never option - so use it carefully 
+  and also token disappears as you close the generate token tab.
+  
+  
+  Thank you for taking the time to visit my blog. Your support means the world to me!
