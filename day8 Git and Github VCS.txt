@@ -1,0 +1,72 @@
+1 - What is Git?
+
+    Git is a version control system that helps you keep track of changes to your files and collaborate with others.
+    It works by keeping a record of every change made to your files, called commits, which allows you to easily revert 
+    to previous versions of your code if needed. You can also create branches, which are copies of your code that you can 
+    work on without affecting the main codebase. Once you're done with your changes, you can merge your branch back into 
+    the main codebase.
+ 
+    Git is widely used in software development, but can be used for any project that involves files that change over time. 
+    It allows multiple people to work on the same project simultaneously, and provides tools for resolving conflicts that 
+    arise when changes overlap.
+
+    Overall, Git makes it easier to collaborate on projects and keep track of changes to your files over time.
+
+2 - What is Github?
+
+    GitHub is a web-based platform that helps people and teams collaborate on software development projects using the Git version 
+    control system.
+
+    It provides a place to store and manage your code, as well as tools for collaborating with others, such as issue 
+    tracking, pull requests, and code review. You can create repositories to organize your code and share it with others, whether it's
+    open-source or private.
+
+    GitHub also has a large community of users, which makes it a great place to find and contribute to open-source projects. 
+    You can search for projects based on language, topic, or other criteria, and easily contribute your changes back to the project.
+
+    Overall, GitHub provides a platform for people to collaborate on software development projects, share their work with others, 
+    and contribute to open-source projects
+
+3 - What is Version Control? How many types of version controls we have?
+
+    Version control is a system that helps you keep track of changes to your files over time. It allows you to maintain a history of all changes 
+    made to your files, so you can easily track down when a change was made, who made it, and why.
+
+    Version control systems also provide tools for collaborating with others on the same files, allowing multiple people to work on the same project 
+    without conflicting with each other's changes.
+
+    - There are two main types of version control systems:
+
+      Centralized version control systems: These are systems where there is a single central repository that everyone works on. Users can check out files 
+      from the central repository, make changes to them, and then check them back in. This type of system is commonly used in large organizations.
+
+      Distributed version control systems: These are systems where everyone has their own local copy of the entire project, and changes are merged together 
+      when users push their changes back to the central repository. This type of system is commonly used in open-source projects.
+
+   Overall, version control is a critical tool for managing changes to your files over time, collaborating with others, and ensuring that your work is always 
+   backed up and versioned.
+
+4 - Why we use distributed version control over centralized version control? 
+
+   Distributed version control systems (DVCS) offer several advantages over centralized version control systems (CVCS), making them a popular choice for many 
+   software development teams.
+
+   1 - With a DVCS, every user has a complete copy of the repository on their local machine, which means they can work on the code even if they're not connected 
+       to the central server. This provides greater flexibility and autonomy for developers, allowing them to work more efficiently.
+
+   2 - Because each user has a complete copy of the repository, DVCS makes it easier to work on different branches of the code simultaneously without worrying about 
+       conflicts or accidentally overwriting someone else's work. Developers can work on their own local copy of the code and then push their changes back to the 
+       central repository when they're ready.
+
+   3 - DVCS provides better security and disaster recovery. Because every user has a complete copy of the repository, there is no single point of failure. If the 
+       central server goes down, users can still access the repository and continue working on their local copy. And because every copy of the repository contains 
+       the full history of changes, it's easier to recover from data loss or corruption.
+
+   Overall, distributed version control offers more flexibility, autonomy, and security than centralized version control, making it a preferred choice for many 
+   software development teams.
+    
+
+
+
+
+
