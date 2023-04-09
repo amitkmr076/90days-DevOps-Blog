@@ -1,0 +1,125 @@
+1-What Is Git Stash?
+
+Git stash is a command that allows you to temporarily save changes that you have made to your 
+working directory without committing them. This is useful when you are working on a specific 
+feature or fixing a bug, but need to switch to a different branch to work on something else.
+
+When you run the Git stash command, Git will save your changes to a "stash" and revert your 
+working directory back to the state of the most recent commit. This allows you to switch branches
+or work on a different feature without committing your changes.
+
+Here's an example of how to use Git stash:
+
+# make some changes to your files
+git add .
+git commit -m "made some changes"
+
+# realize you need to switch branches to work on something else
+git stash
+
+# switch to a different branch
+git checkout other_branch
+
+# make some changes on the other branch
+git add .
+git commit -m "made some changes on other_branch"
+
+# switch back to the original branch and apply the stash
+git checkout original_branch
+git stash apply OR git stash pop (for multiple stash and to choose from)
+
+In this example, we made some changes on the "original_branch", then used Git stash to \
+temporarily save those changes. We then switched to the "other_branch" to work on something 
+else, made some changes there, and committed them. Finally, we switched back to the 
+"original_branch" and used Git stash apply to restore the changes we had temporarily saved 
+earlier.
+
+Git stash is a useful tool when you need to switch between different branches or work on 
+different features without committing your changes. However, it is important to note that 
+Git stash is not a replacement for committing your changes. It is recommended to commit your 
+changes regularly and only use Git stash when necessary.
+
+
+2 - What Is Git Cherry-pick?explain in simple language for beginner
+
+Git cherry-pick is a command that allows you to apply a specific commit from one branch to 
+another branch. This is useful when you want to selectively apply changes from one branch 
+to another.
+
+Here's an example of how to use Git cherry-pick:
+
+# make a new branch to apply the cherry-pick to
+git checkout -b new_branch
+
+# cherry-pick the commit from the old branch
+git cherry-pick 123456
+
+# commit the cherry-picked changes to the new branch
+git commit -m "cherry-picked changes from old branch"
+
+In this example, we first created a new branch called "new_branch" to apply the cherry-pick 
+to. We then used Git cherry-pick to apply a specific commit (with hash 123456) from the old 
+branch to the new branch and to get hash use command git log to get the commit history you 
+will find hasd id on the left hand side of commit log. Finally, we committed the cherry-picked changes to the new branch 
+with a descriptive message.
+
+Git cherry-pick is a useful tool when you need to selectively apply changes from one branch 
+to another. However, it is important to note that cherry-picking a commit can result in conflicts
+if the changes in the commit conflict with changes in the target branch. Therefore, it is 
+recommended to use cherry-pick sparingly and carefully, and to always test the changes 
+thoroughly before committing them.
+
+3- What is Resolving Conflicts in Git ? explain in simple language for beginner
+
+Git is a version control system that allows multiple users to work on the same project simultaneously.
+Sometimes, when multiple users make changes to the same file or line of code, conflicts can arise.
+When this happens, Git needs to resolve the conflicts before the changes can be committed and 
+merged.
+
+Here's how to resolve conflicts in Git:
+
+Identify the conflicts: When you try to merge or pull changes from another branch or repository, Git will notify you if there are any conflicts. You can use the git status command to see which files have conflicts.
+
+Open the conflicting file: Open the file(s) that have conflicts in a text editor. You'll see the conflicting code marked with Git conflict markers like "<<<<<<< HEAD" and ">>>>>>> other_branch".
+
+Edit the conflicting code: Edit the code in the conflicting file to resolve the conflicts. You'll need to choose which changes to keep and which changes to discard.
+
+Save the changes: Once you've resolved the conflicts, save the changes to the file.
+
+Add and commit the changes: After resolving the conflicts, use the git add command to stage the changes and the git commit command to commit the changes with a descriptive message.
+
+Here's an example of how to resolve conflicts in Git:
+
+# try to merge changes from another branch
+git merge other_branch
+
+# Git notifies us of conflicts
+CONFLICT (content): Merge conflict in file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+# open the conflicting file in a text editor
+nano file.txt
+
+# resolve the conflicts by editing the code
+<<<<<<< HEAD
+This is some text added in the first branch.
+=======
+This is some text added in the second branch.
+>>>>>>> other_branch
+#  choose to keep the changes from the second branch
+
+# save the changes to the file
+Ctrl + X, Y, Enter
+
+# add and commit the changes
+git add file.txt
+git commit -m "resolved conflicts in file.txt"
+
+In this example, we tried to merge changes from the "other_branch" into the current branch, 
+but Git notified us of conflicts in "file.txt". We opened "file.txt" in a text editor, edited 
+the code to resolve the conflicts, and saved the changes. We then used Git to stage and commit
+ the changes with a descriptive message.
+
+Resolving conflicts in Git can be a bit tricky, but with practice it becomes easier. It's 
+important to carefully review the conflicting code and make sure the changes are correctly 
+merged before committing them.

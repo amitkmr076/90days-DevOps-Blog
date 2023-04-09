@@ -1,0 +1,79 @@
+ A Git cheat-sheet:
+
+Setting up Git
+
+git init: Initialize a new Git repository
+git clone [url]: Clone an existing Git repository to your local machine
+
+
+Making Changes
+
+git status: Check the current status of your Git repository
+git add [file]: Add a file to the staging area
+git add .: Add all changes to the staging area
+git commit -m "message": Commit changes to the repository with a message describing the 
+changes
+
+Branching
+
+git branch: Show a list of branches in the repository
+git branch -b [name]: Create a new branch
+git checkout [name]: Switch to a different branch
+git merge [branch]: Merge a branch into the current branch
+
+Undoing Changes
+
+git log: Show the commit history of the repository
+git reset [commit]: Remove changes and reset the repository to a previous commit
+git revert [commit]: Undo changes made by a previous commit
+
+Working with Remote Repositories
+
+git remote add [name] [url]: Add a remote repository to your local repository
+git push [remote] [branch]: Push changes to a remote repository
+git pull [remote] [branch]: Pull changes from a remote repository
+
+Miscellaneous
+
+git stash: Temporarily save changes that aren't ready to be committed
+git cherry-pick [commit]: Apply a specific commit to a different branch
+git diff: Show the difference between two commits, branches, or files
+git tag [name]: Create a new tag for a specific commit
+
+While Git has a wide range of commands and features, these fundamental commands are adequate 
+for beginners. It's important to thoroughly test any changes before committing them to ensure 
+the stability and quality of your code
+
+
+2-list of commonly used Linux and Ubuntu commands:
+
+pwd - print working directory
+ls - list files and directories
+cd - change directory
+mkdir - make directory
+rmdir - remove directory
+touch - create a new file
+cat - concatenate and display files
+cp - copy files and directories
+mv - move or rename files and directories
+rm - remove files and directories
+chmod - change permissions of files and directories
+chown - change ownership of files and directories
+ps - display currently running processes
+top - display system processes and their resource usage
+kill - send a signal to a process to terminate it
+ping - check network connectivity
+ifconfig - display network interface configuration
+df - display disk space usage
+du - display file and directory sizes
+tar - create or extract archive files
+sudo - execute a command with administrative privileges
+apt-get - package manager for Ubuntu and Debian-based systems
+dpkg - Debian package manager
+snap - package manager for Ubuntu Snappy packages
+uname - display system information
+lsb_release - display Ubuntu or Debian release information
+grep - search for a pattern in a file
+find - search for files or directories
+ssh - secure shell for remote access
+scp - secure copy for transferring files over SSH

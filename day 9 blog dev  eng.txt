@@ -87,11 +87,9 @@ and git config --global user.email"user email"
 3 add some file and make changes to it and run the command git add "file name"
   and commit the file along with changes by git commit -m "add message"
 
-4  Now add url to git remote by git remote add origin "url"
-   you have to copy your github repository url or just simply create an
-   repository with the same name as your local repository and copy the repo url and paste it
-   and check the remote status by git remote -v
-   you will see an output showing origin url fetch and push
+4  Now add your master branch to git remote by
+   git add remote origin master and check the status by git status
+   this will show the master branch added for fetch and push 
 
 5 then, push your changes to github by using command
   git push origin master - after this it will ask for user name and password   
@@ -104,5 +102,3 @@ and git config --global user.email"user email"
   Note: token expire as its has validity from 7 days to never option - so use it carefully 
   and also token disappears as you close the generate token tab.
   
-  
-  Thank you for taking the time to visit my blog. Your support means the world to me!
